@@ -14,7 +14,7 @@
   </a>
 </p>
 
-> Webpack integrations, features and configurations, intergrating webpack into our JavaScript applications
+> Webpack integrations, features and configurations, intergrating webpack into your JavaScript applications
 
 ### 🏠 [Homepage](https://github.com/taibuharoub/webpack-5#readme)
 
