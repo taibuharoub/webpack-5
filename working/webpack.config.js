@@ -64,5 +64,12 @@ module.exports = {
         //     ]
         // })
         new HtmlWebPackPlugin()
+        // new HtmlWebPackPlugin({
+        //     title: "Webpack Intergrations",
+        //     filename: "subfolder/custom_filename.html",
+        //     meta: {
+        //         description: "Some description"
+        //     }
+        // })
     ]
 }
