@@ -43,6 +43,12 @@ module.exports = {
                         plugins: ["transform-class-properties"]
                     }
                 }
+            },
+            {
+                test: /\.hbs$/,
+                use: [
+                    "handlebars-loader"
+                ]
             }
         ]
     },
@@ -63,7 +69,7 @@ module.exports = {
         //         path.join(process.cwd(), "build/**/*") //clean other folders
         //     ]
         // })
-        new HtmlWebPackPlugin()
+        // new HtmlWebPackPlugin()
         // new HtmlWebPackPlugin({
         //     title: "Webpack Intergrations",
         //     filename: "subfolder/custom_filename.html",
@@ -71,5 +77,10 @@ module.exports = {
         //         description: "Some description"
         //     }
         // })
+        new HtmlWebPackPlugin({
+            title: "Wepack Intergrations",
+            template: "src/index.hbs",
+            description: "Some description"
+        })
     ]
 }
