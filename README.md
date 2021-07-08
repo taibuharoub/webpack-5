@@ -1,4 +1,4 @@
-<h1 align="center">Webpack 5 Configurations</h1>
+<h1 align="center">Webpack Configurations</h1>
 <p>
   <a href="https://www.npmjs.com/package/webpack-5" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/webpack-5.svg">
@@ -14,7 +14,7 @@
   </a>
 </p>
 
-> Webpack 5 integrations, features and configurations, intergrating webpack into our JavaScript applications
+> Webpack integrations, features and configurations, intergrating webpack into our JavaScript applications
 
 ### 🏠 [Homepage](https://github.com/taibuharoub/webpack-5#readme)
 
