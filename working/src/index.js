@@ -11,3 +11,12 @@ const helloWorldButton = new HelloWorldButton()
 helloWorldButton.render()
 // addImage();
 
+//check NODE_ENV variable
+
+if (process.env.NODE_ENV === "production") {
+    console.log("Production Mode");
+} else if (process.env.NODE_ENV === "development") {
+    console.log("Development Mode");
+}
+
+// helloWorldButton.methodThatDoesNotExist();
