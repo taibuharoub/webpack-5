@@ -4,9 +4,12 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: {
+        "hello-world": "./src/hello-world.js",
+        "pc": "./src/pc.js"
+    },
     output: {
-        filename: "bundle.js",
+        filename: "[name].bundle.js",
         path: path.resolve(__dirname, "./dist"),
         publicPath: ""
     },
@@ -69,7 +72,7 @@ module.exports = {
         //         path.join(process.cwd(), "build/**/*") //clean other folders
         //     ]
         // })
-        new HtmlWebPackPlugin()
+        // new HtmlWebPackPlugin()
         // new HtmlWebPackPlugin({
         //     title: "Webpack Intergrations",
         //     filename: "subfolder/custom_filename.html",
@@ -82,5 +85,19 @@ module.exports = {
         //     template: "src/index.hbs",
         //     description: "Some description"
         // })
+        new HtmlWebPackPlugin({
+            filename: "hello-world.html",
+            chunks: ["hello-world"],
+            title: "Hello World",
+            template: "src/page-template.hbs",
+            description: "Some description"
+        }),
+        new HtmlWebPackPlugin({
+            filename: "pc.html",
+            chunks: ["pc"],
+            title: "Computer",
+            template: "src/page-template.hbs",
+            description: "Some Computer"
+        })
     ]
 }
