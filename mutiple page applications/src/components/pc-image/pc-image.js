@@ -7,7 +7,9 @@ class pcImage {
         img.src = pc;
         img.alt = "pc"
         img.classList.add("pc-image");
-        bodyDomElement.appendChild(img);
+        // bodyDomElement.appendChild(img);
+        const body = document.querySelector("body");
+        body.appendChild(img);
     }
 }
 
