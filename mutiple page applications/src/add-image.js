@@ -1,4 +1,4 @@
-import pc from "./pc.jpg";
+// import pc from "./pc.jpg";
 
 function addImage() {
   const img = document.createElement("img");
